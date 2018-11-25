@@ -10,7 +10,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setup(name='carpi-settings',
-      version='0.1.0',
+      version='0.1.2',
       description='A library providing utilities for storing settings in a CarPi application.',
       long_description=long_description,
       url='https://github.com/rGunti/CarPi-Settings',
@@ -28,5 +28,8 @@ setup(name='carpi-settings',
           'carpi-commons',
           'wheel'
       ],
+      extras_require={
+          'redis': ['redis']
+      },
       zip_safe=False,
       include_package_data=True)
