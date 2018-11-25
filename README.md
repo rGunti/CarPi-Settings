@@ -1,2 +1,2 @@
-# CarPi-Commons
-A library providing utilities for writing CarPi programs and services.
+# CarPi-Settings
+A library providing utilities for storing settings in a CarPi application.
