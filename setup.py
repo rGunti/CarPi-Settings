@@ -26,8 +26,10 @@ setup(name='carpi-settings',
       packages=['carpisettings'],
       install_requires=[
           'carpi-commons',
-          'redis',
           'wheel'
       ],
+      extras_require={
+          'redis': ['redis']
+      },
       zip_safe=False,
       include_package_data=True)

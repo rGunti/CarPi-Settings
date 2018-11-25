@@ -1,2 +1,3 @@
 carpi-commons
+redis
 wheel
