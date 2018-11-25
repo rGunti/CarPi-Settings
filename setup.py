@@ -10,7 +10,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setup(name='carpi-settings',
-      version='0.1.1',
+      version='0.1.2',
       description='A library providing utilities for storing settings in a CarPi application.',
       long_description=long_description,
       url='https://github.com/rGunti/CarPi-Settings',
