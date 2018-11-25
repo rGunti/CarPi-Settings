@@ -209,7 +209,8 @@ try:
 
         def read_value(self, key: str, default: str = None) -> str:
             self._log.debug("Reading %s", key)
-            return self._redis.get(key)
+            v = self._redis.get(key)
+            return str(v) if v else default
 
         def write_value(self, key: str, value: Any):
             self._log.debug("Writing %s", key)
